@@ -317,6 +317,23 @@
     @media(max-width:1400px) and (min-height:900px) {
         .car {
             top: 8rem;
+            height: 48vh;
+        }
+    }
+    
+    @media(max-width:1202px) and (min-height:900px) {
+        .car img:nth-child(1) {
+            top: 0;
+        }
+        .car img:nth-child(2) {
+            top: 0;
+        }
+        .car img:nth-child(3) {
+            top: 0;
+        }
+        .car {
+            flex-direction: row;
+            top: 11rem;
         }
     }
     
@@ -327,12 +344,13 @@
         .car {
             height: fit-content;
             top: 25rem;
+            flex-direction: column;
         }
         .car img {
             top: 0 !important;
         }
         .more {
-            top: 28em;
+            top: 49em;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -345,13 +363,28 @@
         .midText p:nth-child(1) {
             bottom: -48px;
         }
+        .hero {
+            top: -135px;
+        }
+    }
+    
+    @media(max-width:819px) {
+        .more {
+            top: 40em;
+        }
+        .midText p:nth-child(1) {
+            right: -10px;
+            bottom: -41px;
+        }
     }
     
     @media(max-width:768px) {
         .more {
-            top: 42em;
+            top: 38em;
         }
     }
+    
+    @media(max-width:690px) {}
     
     @media(max-width:610px) {
         .line {
@@ -380,6 +413,55 @@
         .social i:nth-child(2),
         .social :nth-child(3) {
             padding-top: 0em;
+        }
+    }
+    
+    @media(max-width:595px) {
+        .midText p:nth-child(1) {
+            right: -4px;
+            bottom: -35px;
+        }
+        .midText {
+            top: 10em;
+        }
+        header ul {
+            display: none;
+        }
+        .logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    @media(max-width:473px) {
+        .midText p:nth-child(1) {
+            right: -4px;
+            bottom: -23px;
+        }
+        .more {
+            padding: 0em 5em;
+            top: 43em;
+        }
+        .leftContent {
+            top: 39em;
+        }
+    }
+    
+    @media(max-width:375px) {
+        .more {
+            padding: 0em 5em;
+            top: 39em;
+        }
+        .leftContent {
+            top: 35em;
+        }
+        .discoverMore h1 {
+            font-size: 1em;
+        }
+        discoverMore img {
+            width: 8px;
         }
     }
     

@@ -40,7 +40,7 @@ if (window.innerHeight <= 900) {
         })
     });
 
-} else {
+} else if (window.innerWidth > 1200 && window.innerHeight > 900) {
     sliderClick.forEach((element, index) => {
         element.addEventListener("click", () => {
             if (index === 1) {
@@ -69,7 +69,70 @@ if (window.innerHeight <= 900) {
             }
         })
     });
+} else if (window.innerWidth <= 1145 && window.innerHeight > 900) {
+
+    sliderClick.forEach((element, index) => {
+        element.addEventListener("click", () => {
+            if (index === 1) {
+                console.log("car1");
+                car1.style.right = "-5px"
+                car2.style.right = "-9px"
+                car3.style.right = "8px"
+                resetClass();
+                element.classList.add("active")
+
+            } else if (index === 2) {
+                // car2.style.top = "-135px"
+                car1.style.right = "-5px"
+                car2.style.right = "-725px"
+                car3.style.right = "648px"
+                resetClass();
+                element.classList.add("active")
+
+            } else if (index === 0) {
+                car1.style.right = "-620px"
+                car2.style.right = "682px"
+                car3.style.right = "-20px"
+                resetClass();
+                element.classList.add("active")
+
+            }
+        })
+    });
+
+} else if (window.innerWidth <= 1200 && window.innerHeight > 900) {
+
+    sliderClick.forEach((element, index) => {
+        element.addEventListener("click", () => {
+            if (index === 1) {
+                console.log("car1");
+                car1.style.right = "-5px"
+                car2.style.right = "-9px"
+                car3.style.right = "8px"
+                resetClass();
+                element.classList.add("active")
+
+            } else if (index === 2) {
+                // car2.style.top = "-135px"
+                car1.style.right = "-5px"
+                car2.style.right = "-725px"
+                car3.style.right = "730px"
+                resetClass();
+                element.classList.add("active")
+
+            } else if (index === 0) {
+                car1.style.right = "-735px"
+                car2.style.right = "682px"
+                car3.style.right = "-20px"
+                resetClass();
+                element.classList.add("active")
+
+            }
+        })
+    });
+
 }
+
 
 
 
