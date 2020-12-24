@@ -31,6 +31,7 @@
     
     nav ul li {
         padding-right: 1.6em;
+        z-index: 1000;
     }
     
     nav ul li a {
