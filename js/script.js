@@ -17,7 +17,7 @@ if (window.innerHeight <= 900) {
                 console.log("car1");
                 car1.style.top = "-100px"
                 car2.style.top = "-9px"
-                car3.style.top = "264px"
+                car3.style.top = "364px"
                 resetClass();
                 element.classList.add("active")
 
@@ -31,7 +31,7 @@ if (window.innerHeight <= 900) {
 
             } else if (index === 0) {
                 car1.style.top = "321px"
-                car2.style.top = "264px"
+                car2.style.top = "364px"
                 car3.style.top = "264px"
                 resetClass();
                 element.classList.add("active")
@@ -62,7 +62,7 @@ if (window.innerHeight <= 900) {
             } else if (index === 0) {
                 car1.style.top = "432px"
                 car2.style.top = "460px"
-                car3.style.top = "264px"
+                car3.style.top = "364px"
                 resetClass();
                 element.classList.add("active")
 
