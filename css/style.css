@@ -67,7 +67,7 @@
         flex-direction: column;
         padding-left: 3em;
         position: relative;
-        top: 10em;
+        top: 8em;
         width: 30%;
     }
     
@@ -97,20 +97,22 @@
         z-index: 2;
     }
     
-    .social i {
+    .social a {
         color: #FBFBFB;
         font-size: 1.5em;
         transition: all .3s ease;
+        text-decoration: none;
     }
     
-    .social i:hover {
+    .social a:hover {
         color: #307F94;
         font-size: 1.5em;
         transition: all .3s ease;
     }
     
-    .social i:nth-child(2),
-    .social :nth-child(3) {
+    .social a:nth-child(2),
+    .social a:nth-child(3),
+    .social a:nth-child(4) {
         padding-top: 1em;
     }
     /* MID CONTENT  */
@@ -178,7 +180,7 @@
     }
     
     .car img:nth-child(2) {
-        top: 264px;
+        top: 387px;
     }
     
     .car img:nth-child(3) {
@@ -227,15 +229,21 @@
     
     .more {
         position: relative;
-        top: -9em;
+        top: -11em;
         display: flex;
         justify-content: space-between;
+        padding-bottom: 1em;
     }
     
     .more p {
         color: #FBFBFB;
         font-size: 0.7em;
         padding-left: 14em;
+        z-index: 1000;
+    }
+    
+    .more a {
+        color: #FBFBFB;
     }
     
     .discoverMore {
@@ -274,7 +282,7 @@
     
     @media (min-height:900px) {
         .more {
-            top: 9em;
+            top: 6em;
         }
         .hero {
             top: 61px;
@@ -284,6 +292,12 @@
         }
         .car img:nth-child(2) {
             top: 460px;
+        }
+    }
+    
+    @media (max-height:900px) {
+        .car {
+            height: 52vh;
         }
     }
     
@@ -410,8 +424,9 @@
             border-radius: 20px;
             z-index: 2;
         }
-        .social i:nth-child(2),
-        .social :nth-child(3) {
+        .social a:nth-child(2),
+        .social a:nth-child(3),
+        .social a:nth-child(4) {
             padding-top: 0em;
         }
     }
