@@ -1,6 +1,6 @@
 # Superheros
 
-## Superheros is a collection of hero headers developed on other creative designers found on Behance, Dribbble, and other design websites!
+## Superheros is a collection of hero headers developed on another creative designers found on Behance, Dribbble, and other design websites!
 
 ### Check my other repos to find different designs!
 
