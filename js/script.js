@@ -17,7 +17,7 @@ if (window.innerHeight <= 900) {
                 console.log("car1");
                 car1.style.top = "-100px"
                 car2.style.top = "-9px"
-                car3.style.top = "264px"
+                car3.style.top = "364px"
                 resetClass();
                 element.classList.add("active")
 
@@ -31,7 +31,7 @@ if (window.innerHeight <= 900) {
 
             } else if (index === 0) {
                 car1.style.top = "321px"
-                car2.style.top = "264px"
+                car2.style.top = "364px"
                 car3.style.top = "264px"
                 resetClass();
                 element.classList.add("active")
@@ -40,13 +40,13 @@ if (window.innerHeight <= 900) {
         })
     });
 
-} else {
+} else if (window.innerWidth >= 1687 && window.innerHeight > 900) {
     sliderClick.forEach((element, index) => {
         element.addEventListener("click", () => {
             if (index === 1) {
                 console.log("car1");
                 car1.style.top = "-100px"
-                car2.style.top = "-9px"
+                car2.style.top = "31px"
                 car3.style.top = "264px"
                 resetClass();
                 element.classList.add("active")
@@ -54,13 +54,42 @@ if (window.innerHeight <= 900) {
             } else if (index === 2) {
                 // car2.style.top = "-135px"
                 car2.style.top = "-459px"
-                car3.style.top = "-420px"
+                car3.style.top = "-383px"
                 car1.style.top = "-100px"
                 resetClass();
                 element.classList.add("active")
 
             } else if (index === 0) {
-                car1.style.top = "471px"
+                car1.style.top = "432px"
+                car2.style.top = "460px"
+                car3.style.top = "364px"
+                resetClass();
+                element.classList.add("active")
+
+            }
+        })
+    });
+} else if (window.innerWidth > 1491 && window.innerHeight > 900) {
+    sliderClick.forEach((element, index) => {
+        element.addEventListener("click", () => {
+            if (index === 1) {
+                console.log("car1");
+                car1.style.top = "-100px"
+                car2.style.top = "88px"
+                car3.style.top = "264px"
+                resetClass();
+                element.classList.add("active")
+
+            } else if (index === 2) {
+                // car2.style.top = "-135px"
+                car2.style.top = "-459px"
+                car3.style.top = "-278px"
+                car1.style.top = "-100px"
+                resetClass();
+                element.classList.add("active")
+
+            } else if (index === 0) {
+                car1.style.top = "432px"
                 car2.style.top = "460px"
                 car3.style.top = "264px"
                 resetClass();
@@ -69,7 +98,99 @@ if (window.innerHeight <= 900) {
             }
         })
     });
+} else if (window.innerWidth > 1200 && window.innerHeight > 900) {
+    sliderClick.forEach((element, index) => {
+        element.addEventListener("click", () => {
+            if (index === 1) {
+                console.log("car1");
+                car1.style.top = "-100px"
+                car2.style.top = "125px"
+                car3.style.top = "264px"
+                resetClass();
+                element.classList.add("active")
+
+            } else if (index === 2) {
+                // car2.style.top = "-135px"
+                car2.style.top = "-459px"
+                car3.style.top = "-219px"
+                car1.style.top = "-100px"
+                resetClass();
+                element.classList.add("active")
+
+            } else if (index === 0) {
+                car1.style.top = "432px"
+                car2.style.top = "460px"
+                car3.style.top = "264px"
+                resetClass();
+                element.classList.add("active")
+
+            }
+        })
+    });
+} else if (window.innerWidth <= 1145 && window.innerHeight > 900) {
+
+    sliderClick.forEach((element, index) => {
+        element.addEventListener("click", () => {
+            if (index === 1) {
+                console.log("car1");
+                car1.style.right = "-5px"
+                car2.style.right = "-9px"
+                car3.style.right = "8px"
+                resetClass();
+                element.classList.add("active")
+
+            } else if (index === 2) {
+                // car2.style.top = "-135px"
+                car1.style.right = "-5px"
+                car2.style.right = "-725px"
+                car3.style.right = "648px"
+                resetClass();
+                element.classList.add("active")
+
+            } else if (index === 0) {
+                car1.style.right = "-620px"
+                car2.style.right = "682px"
+                car3.style.right = "-20px"
+                resetClass();
+                element.classList.add("active")
+
+            }
+        })
+    });
+
+} else if (window.innerWidth <= 1200 && window.innerHeight > 900) {
+
+    sliderClick.forEach((element, index) => {
+        element.addEventListener("click", () => {
+            if (index === 1) {
+                console.log("car1");
+                car1.style.right = "-5px"
+                car2.style.right = "-9px"
+                car3.style.right = "8px"
+                resetClass();
+                element.classList.add("active")
+
+            } else if (index === 2) {
+                // car2.style.top = "-135px"
+                car1.style.right = "-5px"
+                car2.style.right = "-725px"
+                car3.style.right = "730px"
+                resetClass();
+                element.classList.add("active")
+
+            } else if (index === 0) {
+                car1.style.right = "-735px"
+                car2.style.right = "682px"
+                car3.style.right = "-20px"
+                resetClass();
+                element.classList.add("active")
+
+            }
+        })
+    });
+
 }
+
 
 
 

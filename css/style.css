@@ -31,6 +31,7 @@
     
     nav ul li {
         padding-right: 1.6em;
+        z-index: 1000;
     }
     
     nav ul li a {
@@ -67,7 +68,7 @@
         flex-direction: column;
         padding-left: 3em;
         position: relative;
-        top: 10em;
+        top: 8em;
         width: 30%;
     }
     
@@ -97,20 +98,22 @@
         z-index: 2;
     }
     
-    .social i {
+    .social a {
         color: #FBFBFB;
         font-size: 1.5em;
         transition: all .3s ease;
+        text-decoration: none;
     }
     
-    .social i:hover {
+    .social a:hover {
         color: #307F94;
         font-size: 1.5em;
         transition: all .3s ease;
     }
     
-    .social i:nth-child(2),
-    .social :nth-child(3) {
+    .social a:nth-child(2),
+    .social a:nth-child(3),
+    .social a:nth-child(4) {
         padding-top: 1em;
     }
     /* MID CONTENT  */
@@ -178,7 +181,7 @@
     }
     
     .car img:nth-child(2) {
-        top: 264px;
+        top: 387px;
     }
     
     .car img:nth-child(3) {
@@ -208,6 +211,11 @@
         transform: rotate(180deg);
     }
     
+    .rightContent ul li:nth-child(4) a {
+        text-decoration: none;
+        color: #FBFBFB;
+    }
+    
     .rightContent ul li {
         color: #696969;
         padding: 1.2em 0;
@@ -227,15 +235,21 @@
     
     .more {
         position: relative;
-        top: -9em;
+        top: -11em;
         display: flex;
         justify-content: space-between;
+        padding-bottom: 1em;
     }
     
     .more p {
         color: #FBFBFB;
         font-size: 0.7em;
         padding-left: 14em;
+        z-index: 1000;
+    }
+    
+    .more a {
+        color: #FBFBFB;
     }
     
     .discoverMore {
@@ -263,6 +277,13 @@
         transition: all .3s ease-in-out;
     }
     
+    .arrow a {
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    
     .discoverMore h1 {
         padding-right: 2em;
     }
@@ -274,7 +295,7 @@
     
     @media (min-height:900px) {
         .more {
-            top: 9em;
+            top: 6em;
         }
         .hero {
             top: 61px;
@@ -284,6 +305,12 @@
         }
         .car img:nth-child(2) {
             top: 460px;
+        }
+    }
+    
+    @media (max-height:900px) {
+        .car {
+            height: 52vh;
         }
     }
     
@@ -317,6 +344,23 @@
     @media(max-width:1400px) and (min-height:900px) {
         .car {
             top: 8rem;
+            height: 48vh;
+        }
+    }
+    
+    @media(max-width:1202px) and (min-height:900px) {
+        .car img:nth-child(1) {
+            top: 0;
+        }
+        .car img:nth-child(2) {
+            top: 0;
+        }
+        .car img:nth-child(3) {
+            top: 0;
+        }
+        .car {
+            flex-direction: row;
+            top: 11rem;
         }
     }
     
@@ -327,12 +371,13 @@
         .car {
             height: fit-content;
             top: 25rem;
+            flex-direction: column;
         }
         .car img {
             top: 0 !important;
         }
         .more {
-            top: 28em;
+            top: 49em;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -345,13 +390,28 @@
         .midText p:nth-child(1) {
             bottom: -48px;
         }
+        .hero {
+            top: -135px;
+        }
+    }
+    
+    @media(max-width:819px) {
+        .more {
+            top: 40em;
+        }
+        .midText p:nth-child(1) {
+            right: -10px;
+            bottom: -41px;
+        }
     }
     
     @media(max-width:768px) {
         .more {
-            top: 42em;
+            top: 38em;
         }
     }
+    
+    @media(max-width:690px) {}
     
     @media(max-width:610px) {
         .line {
@@ -377,8 +437,9 @@
             border-radius: 20px;
             z-index: 2;
         }
-        .social i:nth-child(2),
-        .social :nth-child(3) {
+        .social a:nth-child(2),
+        .social a:nth-child(3),
+        .social a:nth-child(4) {
             padding-top: 0em;
         }
     }
