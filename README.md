@@ -4,4 +4,4 @@
 
 ### Check other branches in this repo to find different designs!
 
-1- Ferrari hero header / Designed by Ehab Elsehmawy https://www.behance.net/ehab480838c2
+Ferrari hero header / Designed by Ehab Elsehmawy https://www.behance.net/ehab480838c2
