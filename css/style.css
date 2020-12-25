@@ -383,6 +383,55 @@
         }
     }
     
+    @media(max-width:595px) {
+        .midText p:nth-child(1) {
+            right: -4px;
+            bottom: -35px;
+        }
+        .midText {
+            top: 10em;
+        }
+        header ul {
+            display: none;
+        }
+        .logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    @media(max-width:473px) {
+        .midText p:nth-child(1) {
+            right: -4px;
+            bottom: -23px;
+        }
+        .more {
+            padding: 0em 5em;
+            top: 43em;
+        }
+        .leftContent {
+            top: 39em;
+        }
+    }
+    
+    @media(max-width:375px) {
+        .more {
+            padding: 0em 1em;
+            top: 39em;
+        }
+        .leftContent {
+            top: 35em;
+        }
+        .discoverMore h1 {
+            font-size: 1em;
+        }
+        discoverMore img {
+            width: 8px;
+        }
+    }
+    
     @media (min-width:1550px) {
         .hero {
             top: 61px;
